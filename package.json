@@ -17,6 +17,7 @@
     "we-ui": "https://github.com/stoogoff/nuxt-components"
   },
   "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.0.0",
     "@nuxtjs/tailwindcss": "^5.3.3",
     "postcss": "^8.4.17"
   }

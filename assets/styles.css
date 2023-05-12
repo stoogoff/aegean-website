@@ -4,12 +4,22 @@
 @tailwind utilities;
 
 body {
-	@apply leading-normal text-gray-700;
-	background-color: #fffef8;
+	@apply font-normal leading-normal text-gray-700 bg-white;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 h1 {
-	@apply tracking-wider font-bold mb-5 text-4xl sm:text-5xl lg:text-4xl xl:text-5xl;
+	@apply tracking-wider uppercase text-center font-bold mx-5 text-4xl sm:text-5xl lg:text-4xl xl:text-5xl;
+}
+h2 {
+	@apply tracking-wider uppercase text-center font-bold mt-5 mb-2 text-xl;
+}
+p {
+	@apply mb-4;
+}
+
+.aegean {
+	@apply uppercase font-bold text-sm;
 }
 
 /* buttons */
@@ -52,7 +62,7 @@ h1 {
 
 /* form inputs */
 .input {
-	@apply text-gray-700 bg-white border-gray-600 hover:border-gray-400 focus:outline-none focus:ring focus:ring-blue-600 focus:border-gray-900 placeholder-gray-500;
+	@apply text-gray-700 bg-white border-white border-b-gray-600 placeholder-gray-500 p-2;
 }
 .input.warning {
 	@apply focus:ring-red-700 text-red-500 border-red-700;

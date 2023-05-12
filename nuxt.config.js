@@ -41,12 +41,24 @@ export default {
 	buildModules: [
 		// https://go.nuxtjs.dev/tailwindcss
 		'@nuxtjs/tailwindcss',
+		'@nuxtjs/google-fonts',
 		'we-ui/nuxt',
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
 	],
+
+	googleFonts: {
+		families: {
+			'Josefin Sans': {
+				wght: [300, 400, 600, 700]
+			},
+		},
+		prefetch: true,
+		preconnect: true,
+		useStylesheet: true,
+	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {
