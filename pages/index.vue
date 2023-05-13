@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<header-section transparent />
 		<section id="logo" class="parallax flex justify-center items-center">
 			<img src="/img/home/aegean-logo.png" alt="Aegean" class="block mx-auto" />
 		</section>
@@ -40,7 +41,7 @@
 		</section>
 		<section id="books" class="buffer inverse" v-if="selectedProduct">
 			<div>
-				<div class="grid gap-2 mb-4" :class="`grid-cols-${books.length}`">
+				<div class="grid gap-2 mb-4 grid-cols-4">
 					<div
 						v-for="(book, idx) in books"
 						:key="`book_${idx}`"
@@ -87,7 +88,9 @@ export default {
 	layout: 'home',
 
 	async fetch() {
-		this.books = await this.$axios.$get('/api/books')
+		await this.$products.fetch()
+
+		this.books = this.$products.books()
 	},
 
 	data() {

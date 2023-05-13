@@ -198,7 +198,7 @@
 				<dt>GM:</dt><dd>Hepios takes this opportunity to scurry into the cave. As Medon looks like the biggest and baddest of the group, the hoplitis uses a Maneuver to engage. Sarah, do you have a Shield or Parry defence?</dd>
 				<dt>Sarah:</dt><dd>No, just a big axe.</dd>
 				<dt>GM:</dt><dd>The hoplitis is Stunned so she’s only rolling 5D which gives her two successes, one of which is a ten. That’s 7 points of damage and she’ll activate Pierce to reduce your armour by 4.</dd>
-				<dt>Sarah:</dt>dt><dd>6 points get through, that’s nasty! My Risk is now higher than my Endurance so I’m Vulnerable. That’s a 1 point Wound and I’ve rolled 4, so that’s a 5 total. Hey, you get a point of Hubris!</dd>
+				<dt>Sarah:</dt><dd>6 points get through, that’s nasty! My Risk is now higher than my Endurance so I’m Vulnerable. That’s a 1 point Wound and I’ve rolled 4, so that’s a 5 total. Hey, you get a point of Hubris!</dd>
 			</dl>
 			<aside>
 				<p>When a character’s Risk is greater than their Endurance the character becomes Vulnerable. Now whenever they would take Risk, they take a Wound of equal value instead. When a character takes a Wound they roll 1D10 on the Critical Injury table and add all of their existing Wounds to the total. Wounds take time to heal, and may apply a penalty depending on the roll. The higher the roll the worse the effect, leading to the character’s possible death.</p>
@@ -289,7 +289,7 @@
 				<dt>Paul:</dt><dd>Medon.</dd>
 				<dt>Sarah:</dt><dd>I think you know what I’m going to do...</dd>
 				<dt>GM:</dt><dd>You didn’t break her guard so you still have a Reach penalty.</dd>
-				<dt>Sarah:</dt>dt><dd>5D, reduced to 3D because of my Wound penalty and the Reach penalty. I get one success. That’s 6 points of damage. How much gets through her armour?</dd>
+				<dt>Sarah:</dt><dd>5D, reduced to 3D because of my Wound penalty and the Reach penalty. I get one success. That’s 6 points of damage. How much gets through her armour?</dd>
 				<dt>GM:</dt><dd>She’s wearing a full bronze panoply, so none.</dd>
 				<dt>Sarah:</dt><dd>I think it’s time. As the son of Ares, I’ll use Medon’s Rage ability to add his 6 Risk to the damage.</dd>
 				<dt>GM:</dt><dd>That puts her on 9 Risk and 1 Wound. Your axe smashes down with a mighty blow, cracking her breastplate. Who’s going next?</dd>
@@ -337,7 +337,7 @@ dt {
 	@apply font-bold;
 }
 dd {
-	@apply ml-8 mb-2;
+	@apply ml-4 mb-2;
 }
 
 </style>

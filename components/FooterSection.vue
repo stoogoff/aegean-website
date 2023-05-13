@@ -47,6 +47,23 @@ import Vue from 'vue'
 import { menu, sales } from '~/utils/config'
 
 export default Vue.component('FooterSection', {
+	async fetch() {
+		await this.$products.fetch()
+
+		const products = this.$products.books()
+
+		this.products = products.map(p => ({
+			href: `/products/${p._id.replace('book:', '')}`,
+			title: p.title,
+		}))
+	},
+
+	data() {
+		return {
+			products: [],
+		}
+	},
+
 	computed: {
 		elsewhere() {
 			return [
@@ -56,11 +73,7 @@ export default Vue.component('FooterSection', {
 				...sales,
 			]
 		},
-		products() {
-			return [
-				{ title: 'About Us', href: '/support/about-us' },
-			]
-		},
+
 		menu() {
 			return menu
 		},

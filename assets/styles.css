@@ -12,7 +12,17 @@ h1 {
 	@apply tracking-wider uppercase text-center font-bold mx-5 text-4xl sm:text-5xl lg:text-4xl xl:text-5xl;
 }
 h2 {
-	@apply tracking-wider uppercase text-center font-bold mt-5 mb-2 text-xl;
+	@apply tracking-wider uppercase text-center font-bold my-5 text-lg;
+}
+h2.meander {
+	background-image: url(/img/meander.svg);
+	background-size:  60% 100%;
+	background-position: left 0;
+	@apply bg-repeat-x;
+}
+h2.meander span {
+	@apply bg-white px-4 py-2 inline-block;
+	margin-top: 3px;
 }
 p {
 	@apply mb-4;
