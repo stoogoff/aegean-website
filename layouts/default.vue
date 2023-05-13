@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<header-section />
-		<main class="main pt-32 px-8">
+		<main class="max-w-3xl mx-auto px-4 md:px-0 pt-32">
 			<Nuxt />
 		</main>
 		<footer-section />

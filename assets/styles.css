@@ -19,7 +19,8 @@ p {
 }
 
 .aegean {
-	@apply uppercase font-bold text-sm;
+	@apply uppercase font-bold;
+	font-size: 0.8em;
 }
 
 /* buttons */

@@ -4,8 +4,10 @@
 			<img src="/img/home/aegean-logo.png" alt="Aegean" class="block mx-auto" />
 		</section>
 		<section id="blurb" class="buffer inverse">
-			<img src="/img/products/aegean-core-cover.jpg" alt="Aegean Core Cover" class="bordered mb-4 md:mb-0" />
-			<p><strong class="aegean">Aegean</strong> is a tabletop role-playing game about a group of mythic heroes building a new, free city on the shores of the Aegean Sea. There are neighbouring cities to trade or war with, monsters to kill, gods to appease, deceptions, negotiations and bloody skirmishes.</p>
+			<img src="/img/home/screen-owl.jpg" alt="Stylised owl" class="bordered mb-4 md:mb-0" />
+			<div class="flex flex-row justify-center items-center">
+				<p class="text-xl md:text-3xl"><strong class="aegean">Aegean</strong> is a tabletop role-playing game about a group of mythic heroes building a new, free city on the shores of the Aegean Sea. There are neighbouring cities to trade or war with, monsters to kill, gods to appease, deceptions, negotiations and bloody skirmishes.</p>
+			</div>
 		</section>
 		<section id="figure" class="parallax"></section>
 		<section id="system" class="buffer">
@@ -34,12 +36,21 @@
 				</ul>
 				<link-action to="/setting" block>Setting</link-action>
 			</div>
-			<img src="/img/home/kerberos.png" alt="Kerberos resting on a rock" />
+			<img class="my-4" src="/img/home/kerberos.png" alt="Kerberos resting on a rock" />
 		</section>
 		<section id="books" class="buffer inverse" v-if="selectedProduct">
 			<div>
 				<div class="grid gap-2 mb-4" :class="`grid-cols-${books.length}`">
-					<div v-for="(book, idx) in books" :key="`book_${idx}`" class="bordered overflow-hidden relative" style="padding-top:100%">
+					<div
+						v-for="(book, idx) in books"
+						:key="`book_${idx}`"
+						class="border-2 overflow-hidden relative"
+						:class="{
+							'border-white': selectedBook === idx,
+							'border-gray-700': selectedBook !== idx,
+						}"
+						style="padding-top:100%"
+					>
 						<img
 							class="absolute inset-0"		
 							:src="book.image"
@@ -55,26 +66,21 @@
 				<render-markdown :content="selectedProduct.description" />
 			</div>
 		</section>
-		<section id="purchase" class="buffer justify-center items-center">
-			<a v-for="(sale, idx) in sales" :key="`sale_${idx}`" :href="sale.link">
-				<img :src="sale.image" :alt="sale.alt" class="mx-auto" />
+		<section id="purchase" class="buffer">
+			<a
+				v-for="(sale, idx) in sales"
+				:key="`sale_${idx}`"
+				:href="sale.href"
+				class="block text-center text-2xl md:text-3xl p-4 md:p-0 underline hover:no-underline text-blue-500"
+			>
+				{{ sale.title }}
 			</a>
 		</section>
-		<footer class="mt-8 p-8 bg-gray-100 text-base">
-			<ul class="uppercase text-sm grid grid-cols-4 mb-8">
-				<li class="text-center"><nuxt-link to="/setting">Setting</nuxt-link></li>
-				<li class="text-center"><nuxt-link to="/system">System</nuxt-link></li>
-				<li class="text-center"><nuxt-link to="/products">Products</nuxt-link></li>
-				<li class="text-center"><nuxt-link to="/downloads">Resources</nuxt-link></li>
-			</ul>
-			<a class="block mx-auto w-56" href="https://we-evolve.co.uk/">
-				<img src="/img/we-evolve-transparent.png" alt="we evolve" />
-			</a>
-			<p class="text-center my-8">&copy; Copyright 2018&ndash;{{ currentYear }} Stoo Goff</p>
-		</footer>
+		<footer-section />
 	</div>
 </template>
 <script>
+import { sales } from '~/utils/config'
 
 export default {
 	name: 'IndexPage',
@@ -92,23 +98,8 @@ export default {
 	},
 
 	computed: {
-		currentYear() {
-			return (new Date()).getFullYear()
-		},
-
 		sales() {
-			return [
-				{
-					image: '/img/drivethrurpg.png',
-					link: 'https://www.drivethrurpg.com/browse/pub/14996/we-evolve/subcategory/32895_40116/Aegean',
-					alt: 'DriveThruRPG',
-				},
-				{
-					image: '/img/gamefound.svg',
-					link: 'https://gamefound.com/projects/stoo/aegean-rpg-mythic-roleplaying-across-the-aegean-sea',
-					alt: 'GameFound',
-				},
-			]
+			return sales
 		},
 
 		selectedProduct() {
@@ -123,14 +114,14 @@ export default {
 .buffer h2 {
 	@apply uppercase text-center mb-2 md:mb-4 font-bold md:text-3xl;
 }
-.buffer p, .buffer li, .prose p, .prose li {
+.buffer li, .prose p, .prose li {
 	@apply md:text-2xl;
 }
 .prose ul {
 	@apply mb-4;
 }
 ul.list li, .prose ul li {
-	@apply relative pl-4 md:mb-2;
+	@apply relative pl-6 md:mb-2;
 }
 ul.list li:after, .prose ul li:after {
 	@apply block absolute bg-black;
@@ -148,7 +139,7 @@ ul.list li:after, .prose ul li:after {
 	@apply border border-gray-100;
 }
 
-section {
+.buffer, .parallax {
 	@apply p-4 md:p-16;
 }
 .buffer {
@@ -168,9 +159,6 @@ section {
 }
 #map {
 	background-image: url(/img/home/map.jpg);
-}
-#purchase img {
-	width: 40vw;
 }
 
 </style>

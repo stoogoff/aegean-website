@@ -1,74 +1,70 @@
 <template>
-	<footer class="mt-8 p-8 bg-gray-100">
-		<ul class="uppercase text-sm grid grid-cols-4 mb-8">
-			<li class="text-center"><nuxt-link to="/">Home</nuxt-link></li>
-			<li class="text-center"><nuxt-link to="/setting/">Setting</nuxt-link></li>
-			<li class="text-center"><nuxt-link to="/system/">System</nuxt-link></li>
-			<li class="text-center"><nuxt-link to="/downloads/">Resources</nuxt-link></li>
-		</ul>
-		<div class="grid grid-cols-2 gap-4 mb-8">
-			<a href="https://www.drivethrurpg.com/product/359987/WILD-Dream-Dive-Training-Simulation">
-				<img src="/img/drivethrurpg.png" alt="DriveThruRPG" />
-			</a>
-			<a href="https://gamefound.com/projects/stoo/aegean-rpg-mythic-roleplaying-across-the-aegean-sea">
-				<img src="/img/gamefound.svg" alt="GameFound" />
-			</a>
-		</div>
-		<a class="block mx-auto w-56" href="https://we-evolve.co.uk/">
-			<img src="/img/we-evolve-transparent.png" alt="we evolve" />
-		</a>
-		<p class="text-center my-8">&copy; Copyright 2018&ndash;{{ currentYear }} Stoo Goff</p>
-		<div class="max-w-4xl">
-			<text-input label="Subscribe" v-model="email" :error="error" :message="message">
-				<template #append>
-					<span @click="subscribe">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>email-outline</title><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" /></svg>
-					</span>
-				</template>
-			</text-input>
+	<footer class="relative pt-8 pb-6 bg-gray-200">
+		<div class="container mx-auto px-4 max-w-screen-lg">
+			<div class="flex flex-wrap">
+				<div class="w-full lg:w-6/12 px-4 mb-6 lg:mb-0">
+					<div class="mt-6">
+						<span :key="`elsewhere_${idx}`" v-for="(item, idx) in elsewhere">
+							<a
+								v-if="item.icon"
+								class="bg-white shadow-lg rounded-full outline-none focus:outline-none mr-2 p-3 inline-block hover:bg-gray-800 hover:text-white transition-all duration-500"
+								:class="item.colour"
+								:href="item.href"
+								target="_blank"
+							>
+								<icon-view :icon="item.icon" />
+							</a>
+							<div v-else>
+								<a
+									class="hover:text-gray-100 block pb-2"
+									:href="item.href"
+									target="_blank"
+								>
+									<img :src="item.image" :alt="item.alt" class="block w-full max-w-xs mt-2" />
+								</a>
+							</div>
+						</span>
+					</div>
+				</div>
+				<div class="w-full lg:w-3/12 px-4">
+					<footer-links title="Menu" :links="menu" />
+				</div>
+				<div class="w-full lg:w-3/12 px-4">
+					<footer-links title="Products" :links="products" />
+				</div>
+			</div>
+			<div class="text-sm mt-8">
+				<a href="https://we-evolve.co.uk/" class="block">
+					<img src="/img/we-evolve-transparent.png" alt="we evolve" class="mb-2 max-w-xs mx-auto" />
+				</a>
+				<p class="text-center">Copyright &copy; 2018&ndash;{{ (new Date()).getFullYear() }} we-evolve</p>
+			</div>
 		</div>
 	</footer>
 </template>
 <script>
 import Vue from 'vue'
-import { validate, required, email } from 'we-ui/utils/validators'
+import { menu, sales } from '~/utils/config'
 
 export default Vue.component('FooterSection', {
-	data() {
-		return {
-			email: '',
-			error: false,
-			message: '',
-		}
-	},
-
 	computed: {
-		rules() {
-			return {
-				email: [required(), email()],
-			}
+		elsewhere() {
+			return [
+				{ icon: 'twitter', href: 'https://twitter.com/stoogoff', colour: 'text-blue-400' },
+				{ icon: 'facebook', href: 'https://www.facebook.com/weevolvegames/', colour: 'text-blue-600' },
+				{ icon: 'itch', href: 'https://we-evolve.itch.io/', colour: 'text-red-400' },
+				...sales,
+			]
 		},
-
-		currentYear() {
-			return (new Date()).getFullYear()
+		products() {
+			return [
+				{ title: 'About Us', href: '/support/about-us' },
+			]
 		},
-	},
-
-	methods: {
-		subscribe() {
-			const messages = validate(this.rules.email, this.email)
-
-			if(messages.length > 0) {
-				this.error = true
-				this.message = messages[0]
-			}
-			else {
-				this.error = false
-				this.message = ''
-			}
-
-			// TODO send subscriber message
-		}
+		menu() {
+			return menu
+		},
 	},
 })
+
 </script>
