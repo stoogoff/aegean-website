@@ -26,10 +26,10 @@
 						</span>
 					</div>
 				</div>
-				<div class="w-full lg:w-3/12 px-4">
+				<div class="w-1/2 lg:w-3/12 px-4">
 					<footer-links title="Menu" :links="menu" />
 				</div>
-				<div class="w-full lg:w-3/12 px-4">
+				<div class="w-1/2 lg:w-3/12 px-4">
 					<footer-links title="Products" :links="products" />
 				</div>
 			</div>

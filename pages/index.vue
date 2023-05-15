@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<header-section transparent />
 		<section id="logo" class="parallax flex justify-center items-center">
 			<img src="/img/home/aegean-logo.png" alt="Aegean" class="block mx-auto" />
 		</section>
@@ -77,7 +76,6 @@
 				{{ sale.title }}
 			</a>
 		</section>
-		<footer-section />
 	</div>
 </template>
 <script>
@@ -112,31 +110,13 @@ export default {
 }
 
 </script>
-<style>
+<style scoped>
 
 .buffer h2 {
 	@apply uppercase text-center mb-2 md:mb-4 font-bold md:text-3xl;
 }
 .buffer li, .prose p, .prose li {
 	@apply md:text-2xl;
-}
-.prose ul {
-	@apply mb-4;
-}
-ul.list li, .prose ul li {
-	@apply relative pl-6 md:mb-2;
-}
-ul.list li:after, .prose ul li:after {
-	@apply block absolute bg-black;
-	content: '';
-	height: .4em;
-	width: .4em;
-	transform: rotate(45deg);
-	top: .4em;
-	left: 0;
-}
-.inverse ul.list li:after, .inverse .prose ul li:after {
-	@apply bg-gray-50;
 }
 .bordered {
 	@apply border border-gray-100;

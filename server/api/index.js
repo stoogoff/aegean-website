@@ -8,7 +8,7 @@ const {
 
 const app = express()
 
-const ALLOWED_PREFIXES = ['books']
+const ALLOWED_PREFIXES = ['books', 'products']
 
 // ----------
 // MIDDLEWARE

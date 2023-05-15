@@ -1,5 +1,9 @@
 <template>
-	<Nuxt />
+	<div id="home-page">
+		<header-section />
+		<Nuxt />
+		<footer-section />
+	</div>
 </template>
 <script>
 

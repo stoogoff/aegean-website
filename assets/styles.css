@@ -12,7 +12,7 @@ h1 {
 	@apply tracking-wider uppercase text-center font-bold mx-5 text-4xl sm:text-5xl lg:text-4xl xl:text-5xl;
 }
 h2 {
-	@apply tracking-wider uppercase text-center font-bold my-5 text-lg;
+	@apply tracking-wider uppercase text-center font-semibold my-5 text-lg;
 }
 h2.meander {
 	background-image: url(/img/meander.svg);
@@ -24,6 +24,9 @@ h2.meander span {
 	@apply bg-white px-4 py-2 inline-block;
 	margin-top: 3px;
 }
+h3 {
+	@apply text-xl font-semibold mb-2 uppercase;
+}
 p {
 	@apply mb-4;
 }
@@ -32,6 +35,62 @@ p {
 	@apply uppercase font-bold;
 	font-size: 0.8em;
 }
+.hero {
+	@apply mb-8 text-lg;
+}
+
+.card {
+	@apply flex pb-8 mb-8;
+	background: url(/img/divider.svg) 50% bottom no-repeat;
+	background-size: 25%;
+}
+.card:last-of-type {
+	@apply bg-none;
+}
+
+.prose ul {
+	@apply mb-4;
+}
+ul.list li, .prose ul li {
+	@apply relative pl-6 md:mb-2;
+}
+ul.list li:after, .prose ul li:after {
+	@apply block absolute bg-black;
+	content: '';
+	height: .4em;
+	width: .4em;
+	transform: rotate(45deg);
+	top: .4em;
+	left: 0;
+}
+.inverse ul.list li:after, .inverse .prose ul li:after {
+	@apply bg-gray-50;
+}
+
+
+
+/* home page specific */
+#home-page .prose p, #home-page .prose li {
+	@apply md:text-2xl;
+}
+
+/* navigation */
+.nav {
+	@apply bg-black;
+}
+.nav-item {
+	@apply text-gray-100 hover:text-gray-300;
+}
+#home-page .nav {
+	@apply bg-white;
+}
+#home-page .nav:not(.nav-menu) {
+	@apply bg-opacity-70;
+}
+#home-page .nav-item {
+	@apply text-black;
+}
+
 
 /* buttons */
 .btn {
