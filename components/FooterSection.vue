@@ -50,10 +50,10 @@ export default Vue.component('FooterSection', {
 	async fetch() {
 		await this.$products.fetch()
 
-		const products = this.$products.books()
+		const products = [...this.$products.books(), ...this.$products.products()]
 
 		this.products = products.map(p => ({
-			href: `/products/${p._id.replace('book:', '')}`,
+			href: `/products/${p._id.replace(/^(book|product):/, '')}`,
 			title: p.title,
 		}))
 	},

@@ -3,56 +3,58 @@
 		<header>
 			<h1>Products</h1>
 		</header>
-		<section>
-			<h2 class="meander"><span>Books</span></h2>
-			<div
-				v-for="(book, idx) in books"
-				:key="`book_${idx}`"
-				class="card"
-			>
-				<div class="w-1/3 p-2">
-					<img
-						:src="book.image"
-						:alt="book.alt"
-						class="p-1 border border-black mb-2"
-					/>
-					<link-action
-						v-for="(url, text) in book.links"
-						:to="url"
-						:key="`book_${idx}_link_${text}`"
-						block
-					>
-						{{ text }}
-					</link-action>
-				</div>
-				<div class="w-2/3 p-2">
-					<h3>{{ book.title }}</a></h3>
-					<render-markdown :content="book.description" />
-				</div>
-			</div>
-		</section>
-		<section>
-			<h2 class="meander"><span>Products</span></h2>
-			<div class="grid grid-cols-3 gap-4">
+		<div class="container">
+			<section>
+				<h2 class="meander"><span>Books</span></h2>
 				<div
-					v-for="(product, idx) in products"
-					:key="`product_${idx}`"
-					class="flex flex-col"
+					v-for="(book, idx) in books"
+					:key="`book_${idx}`"
+					class="card"
 				>
-					<img :src="product.image" :alt="product.alt" class="border border-gray-800 mb-4" />
-					<h3 class="text-center text-base">{{ product.title }}</h3>
-					<render-markdown class="flex-grow" :content="product.description" />
-					<link-action
-						v-for="(url, text) in product.links"
-						:to="url"
-						:key="`product_${idx}_link_${text}`"
-						block
-					>
-						{{ text }}
-					</link-action>
+					<div class="w-full md:w-1/3 p-2">
+						<img
+							:src="book.image"
+							:alt="book.alt"
+							class="p-1 border border-black mb-2"
+						/>
+						<link-action
+							v-for="(url, text) in book.links"
+							:to="url"
+							:key="`book_${idx}_link_${text}`"
+							block
+						>
+							{{ text }}
+						</link-action>
+					</div>
+					<div class="w-full md:w-2/3 p-2">
+						<h3>{{ book.title }}</a></h3>
+						<render-markdown :content="book.description" />
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<section>
+				<h2 class="meander"><span>Products</span></h2>
+				<div class="md:grid grid-cols-3 gap-4">
+					<div
+						v-for="(product, idx) in products"
+						:key="`product_${idx}`"
+						class="flex flex-col mb-8 md:mb-0"
+					>
+						<img :src="product.image" :alt="product.alt" class="border border-gray-800 mb-4" />
+						<h3 class="text-center text-base">{{ product.title }}</h3>
+						<render-markdown class="flex-grow" :content="product.description" />
+						<link-action
+							v-for="(url, text) in product.links"
+							:to="url"
+							:key="`product_${idx}_link_${text}`"
+							block
+						>
+							{{ text }}
+						</link-action>
+					</div>
+				</div>
+			</section>
+		</div>
 	</article>
 </template>
 <script>

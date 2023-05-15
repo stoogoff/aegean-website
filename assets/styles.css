@@ -8,8 +8,12 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
+header {
+	@apply bg-black mb-8 md:mb-16;
+	background-image: url(/img/marble.jpg);
+}
 h1 {
-	@apply tracking-wider uppercase text-center font-bold mx-5 text-4xl sm:text-5xl lg:text-4xl xl:text-5xl;
+	@apply tracking-wider uppercase text-center font-bold mx-5 text-4xl sm:text-5xl lg:text-4xl xl:text-5xl text-white py-24 md:py-32;
 }
 h2 {
 	@apply tracking-wider uppercase text-center font-semibold my-5 text-lg;
@@ -31,6 +35,10 @@ p {
 	@apply mb-4;
 }
 
+.container {
+	@apply max-w-3xl mx-auto px-4 md:px-0;
+}
+
 .aegean {
 	@apply uppercase font-bold;
 	font-size: 0.8em;
@@ -40,7 +48,7 @@ p {
 }
 
 .card {
-	@apply flex pb-8 mb-8;
+	@apply block md:flex pb-8 mb-8;
 	background: url(/img/divider.svg) 50% bottom no-repeat;
 	background-size: 25%;
 }
@@ -67,8 +75,6 @@ ul.list li:after, .prose ul li:after {
 	@apply bg-gray-50;
 }
 
-
-
 /* home page specific */
 #home-page .prose p, #home-page .prose li {
 	@apply md:text-2xl;
@@ -76,95 +82,31 @@ ul.list li:after, .prose ul li:after {
 
 /* navigation */
 .nav {
+	@apply bg-black bg-opacity-70;
+}
+.mobile-menu {
 	@apply bg-black;
 }
-.nav-item {
+.nav-item, .nav-button {
 	@apply text-gray-100 hover:text-gray-300;
+}
+.nav-logo {
+	@apply text-white;
 }
 #home-page .nav {
 	@apply bg-white;
 }
-#home-page .nav:not(.nav-menu) {
-	@apply bg-opacity-70;
+#home-page .nav:not(.mobile-menu) {
+	@apply bg-opacity-70 md:bg-opacity-30;
 }
 #home-page .nav-item {
+	@apply text-gray-400 hover:text-black transition-colors duration-500 ease-in-out;
+}
+#home-page .nav-button {
 	@apply text-black;
 }
 
-
 /* buttons */
 .btn {
-	@apply bg-gray-400 text-gray-700 hover:text-white hover:bg-gray-600 border-gray-400;
-}
-.btn.disabled {
-	@apply bg-gray-300 text-gray-500 border-gray-900 hover:bg-gray-300 hover:text-gray-500;
-}
-.btn.primary {
-	@apply bg-blue-600 text-blue-200 hover:bg-blue-800;
-}
-.btn.secondary {
-	@apply bg-yellow-600 text-yellow-200 hover:bg-yellow-800;
-}
-.btn.success {
-	@apply bg-green-600 text-green-200 hover:bg-green-800;
-}
-.btn.warning {
-	@apply bg-red-600 text-red-200 hover:bg-red-800;
-}
-.btn.outlined {
-	@apply bg-white border border-solid border-gray-700 hover:text-gray-900 hover:bg-gray-100;
-}
-
-
-/* alerts */
-.alert.success {
-	@apply bg-green-200 text-green-800 border-green-800;
-}
-.alert.primary {
-	@apply bg-blue-200 text-blue-800 border-blue-800;
-}
-.alert.secondary {
-	@apply bg-yellow-200 text-yellow-800 border-yellow-800;
-}
-.alert.warning {
-	@apply bg-red-200 text-red-800 border-red-800;
-}
-
-/* form inputs */
-.input {
-	@apply text-gray-700 bg-white border-white border-b-gray-600 placeholder-gray-500 p-2;
-}
-.input.warning {
-	@apply focus:ring-red-700 text-red-500 border-red-700;
-}
-.input.disabled {
-	@apply bg-gray-200;
-}
-
-/* labels and messages */
-.label {
-	@apply text-gray-700;
-}
-.label.warning {
-	@apply text-red-500;
-}
-.message.success {
-	@apply text-green-800;
-}
-.message.warning {
-	@apply text-red-800;
-}
-
-/* tabs */
-.tab-group {
-	@apply text-gray-500 border-gray-200;
-}
-.tab {
-	@apply hover:text-gray-600 hover:border-gray-300 uppercase;
-}
-.tab.active {
-	@apply text-blue-400 border-blue-400 hover:border-blue-300 hover:text-blue-300;
-}
-.tab.disabled {
-	@apply text-gray-400 hover:text-gray-400 hover:border-gray-200 cursor-not-allowed;
+	@apply bg-black text-gray-300 hover:text-white hover:bg-gray-700 border-gray-400;
 }
