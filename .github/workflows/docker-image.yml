@@ -1,0 +1,59 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: eu-west-2
+
+    - name: Login to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+
+    - name: Build, tag, and push the image to Amazon ECR
+      id: build-image
+      env:
+        ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+        ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+        IMAGE_TAG: ${{ github.sha }}
+      run: |
+        # Build a docker container and push it to ECR 
+        docker build -t aegean \
+          --build-arg db_user=${{ secrets.DB_USER }} \
+          --build-arg db_password=${{ secrets.DB_PASSWORD }} \
+          .
+        docker tag aegean:latest $ECR_REGISTRY/$ECR_REPOSITORY:latest
+        docker tag aegean:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
+#    - name: Pull and redeploy docker container
+#      id: deploy-image
+#      uses: appleboy/ssh-action@v0.1.6
+#      with:
+#        host: ${{ secrets.HOST }}
+#        username: ubuntu
+#        key: ${{ secrets.ACTION_PRIVATE_KEY }} -- TODO
+#        env:
+#          ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+#          ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+#        script: |
+#          docker pull $ECR_REGISTRY/$ECR_REPOSITORY:latest
+#          docker stop webserver
+#          docker rm webserver
+#          docker run --name webserver -p 3000:3000 -d $ECR_REGISTRY/$ECR_REPOSITORY:latest
+#          docker ps
