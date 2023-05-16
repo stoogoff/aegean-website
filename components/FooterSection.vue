@@ -12,7 +12,7 @@
 								:href="item.href"
 								target="_blank"
 							>
-								<icon-view :icon="item.icon" />
+								<we-icon-view :icon="item.icon" />
 							</a>
 							<div v-else>
 								<a
@@ -29,9 +29,6 @@
 				<div class="w-1/2 lg:w-3/12 px-4">
 					<footer-links title="Menu" :links="menu" />
 				</div>
-				<div class="w-1/2 lg:w-3/12 px-4">
-					<footer-links title="Products" :links="products" />
-				</div>
 			</div>
 			<div class="text-sm mt-8">
 				<a href="https://we-evolve.co.uk/" class="block">
@@ -47,23 +44,6 @@ import Vue from 'vue'
 import { menu, sales } from '~/utils/config'
 
 export default Vue.component('FooterSection', {
-	async fetch() {
-		await this.$products.fetch()
-
-		const products = [...this.$products.books(), ...this.$products.products()]
-
-		this.products = products.map(p => ({
-			href: `/products/${p._id.replace(/^(book|product):/, '')}`,
-			title: p.title,
-		}))
-	},
-
-	data() {
-		return {
-			products: [],
-		}
-	},
-
 	computed: {
 		elsewhere() {
 			return [

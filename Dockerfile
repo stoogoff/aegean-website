@@ -1,6 +1,8 @@
 # build container
 FROM node:16.18-alpine
 
+RUN apk --no-cache add git
+
 WORKDIR /app
 
 COPY ./package.json .

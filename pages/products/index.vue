@@ -17,14 +17,14 @@
 							:alt="book.alt"
 							class="p-1 border border-black mb-2"
 						/>
-						<link-action
+						<we-link-action
 							v-for="(url, text) in book.links"
 							:to="url"
 							:key="`book_${idx}_link_${text}`"
 							block
 						>
 							{{ text }}
-						</link-action>
+						</we-link-action>
 					</div>
 					<div class="w-full md:w-2/3 p-2">
 						<h3>{{ book.title }}</a></h3>
@@ -43,14 +43,14 @@
 						<img :src="product.image" :alt="product.alt" class="border border-gray-800 mb-4" />
 						<h3 class="text-center text-base">{{ product.title }}</h3>
 						<render-markdown class="flex-grow" :content="product.description" />
-						<link-action
+						<we-link-action
 							v-for="(url, text) in product.links"
 							:to="url"
 							:key="`product_${idx}_link_${text}`"
 							block
 						>
 							{{ text }}
-						</link-action>
+						</we-link-action>
 					</div>
 				</div>
 			</section>

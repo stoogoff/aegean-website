@@ -1,5 +1,5 @@
 <template>
-	<main-nav :menu-items="menuItems">Aegean</main-nav>
+	<we-main-nav :menu-items="menuItems">Aegean</we-main-nav>
 </template>
 <script>
 import Vue from 'vue'

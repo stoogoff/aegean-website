@@ -8819,7 +8819,11 @@ watchpack@^2.4.0:
 
 "we-ui@https://github.com/stoogoff/nuxt-components":
   version "1.0.0"
-  resolved "https://github.com/stoogoff/nuxt-components#c7e63f51fbe72ace66a7edce1abf33765fe23c7a"
+  resolved "https://github.com/stoogoff/nuxt-components#2a818c92dd6bdfdb56dd20acdf53e636a28f67dd"
+
+"we-ui@https://github.com/stoogoff/nuxt-components#v1.0.0":
+  version "1.0.0"
+  resolved "https://github.com/stoogoff/nuxt-components#ce4dcd0959925bc8c43db929d84c112e6b53250f"
 
 webidl-conversions@^3.0.0:
   version "3.0.1"

@@ -22,7 +22,7 @@
 					<li>Downtime events for healing, gathering wealth and influence, and pacifying the gods.</li>
 					<li>City management rules to govern and guide your home <em>polis</em>.</li>
 				</ul>
-				<link-action to="/system" block>System</link-action>
+				<we-link-action to="/system" block>System</we-link-action>
 			</div>
 		</section>
 		<section id="map" class="parallax"></section>
@@ -34,7 +34,7 @@
 					<li>The gods are ever present and take an interest in mortal lives.</li>
 					<li>Neighbouring city-states vie for power through politics, trade or conflict.</li>
 				</ul>
-				<link-action to="/setting" block>Setting</link-action>
+				<we-link-action to="/setting" block>Setting</we-link-action>
 			</div>
 			<img class="my-4" src="/img/home/kerberos.png" alt="Kerberos resting on a rock" />
 		</section>
