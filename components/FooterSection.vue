@@ -20,7 +20,7 @@
 									:href="item.href"
 									target="_blank"
 								>
-									<img :src="item.image" :alt="item.alt" class="block w-full max-w-xs mt-2" />
+									<cdn-image :source="item.image" :alt="item.alt" class="block w-full max-w-xs mt-2" />
 								</a>
 							</div>
 						</span>
@@ -32,7 +32,7 @@
 			</div>
 			<div class="text-sm mt-8">
 				<a href="https://we-evolve.co.uk/" class="block">
-					<img src="/img/we-evolve-transparent.png" alt="we evolve" class="mb-2 max-w-xs mx-auto" />
+					<cdn-image source="/img/we-evolve-transparent.png" alt="we evolve" class="mb-2 max-w-xs mx-auto" />
 				</a>
 				<p class="text-center">Copyright &copy; 2018&ndash;{{ (new Date()).getFullYear() }} we-evolve</p>
 			</div>

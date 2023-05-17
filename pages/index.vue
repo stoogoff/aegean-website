@@ -9,7 +9,7 @@
 				<p class="text-xl md:text-3xl"><strong class="aegean">Aegean</strong> is a tabletop role-playing game about a group of mythic heroes building a new, free city on the shores of the Aegean Sea. There are neighbouring cities to trade or war with, monsters to kill, gods to appease, deceptions, negotiations and bloody skirmishes.</p>
 			</div>
 		</section>
-		<section id="figure" class="parallax"></section>
+		<section id="figure" class="parallax" :style="`background-image: url(${backgroundImage('/img/home/dice-tray.jpg')})`"></section>
 		<section id="system" class="buffer">
 			<cdn-image source="/img/home/warriors.png" alt="Two warriors facing the enemy" />
 			<div>
@@ -25,7 +25,7 @@
 				<we-link-action to="/system" block>System</we-link-action>
 			</div>
 		</section>
-		<section id="map" class="parallax"></section>
+		<section id="map" class="parallax" :style="`background-image: url(${backgroundImage('/img/home/map.jpg')})`"></section>
 		<section id="setting" class="buffer">
 			<div class="mb-4">
 				<h2>The Setting</h2>
@@ -44,18 +44,18 @@
 					<div
 						v-for="(book, idx) in books"
 						:key="`book_${idx}`"
-						class="border-2 overflow-hidden relative pointer"
+						class="border-2 overflow-hidden relative cursor-pointer"
 						:class="{
 							'border-white': selectedBook === idx,
 							'border-gray-700': selectedBook !== idx,
 						}"
 						style="padding-top:100%"
+						@click="selectedBook = idx"
 					>
 						<cdn-image
 							class="absolute inset-0"		
 							:source="book.image"
 							:alt="book.alt"
-							@click="selectedBook = idx"
 						/>
 					</div>
 				</div>
@@ -103,9 +103,20 @@ export default {
 			return sales
 		},
 
+
 		selectedProduct() {
 			return this.books[this.selectedBook] || false
 		}
+	},
+
+	methods: {
+		backgroundImage(image) {
+			const cdn = new URL(process.env.cdn)
+
+			cdn.pathname = image
+
+			return cdn.toString()
+		},
 	},
 }
 
@@ -136,12 +147,6 @@ export default {
 }
 #logo img {
 	width: 90vw;
-}
-#figure {
-	background-image: url(/img/home/dice-tray.jpg);
-}
-#map {
-	background-image: url(/img/home/map.jpg);
 }
 
 </style>

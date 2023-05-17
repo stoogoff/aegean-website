@@ -18,9 +18,11 @@ export default Vue.component('CdnImage', {
 
 	computed: {
 		absoluteSource() {
-			const cdn = process.env.cdn.replace(/\/$/, '')
+			const cdn = new URL(process.env.cdn)
 
-			return cdn + this.source
+			cdn.pathname = this.source
+
+			return cdn.toString()
 		},
 	},
 })
