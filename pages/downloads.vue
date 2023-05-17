@@ -16,8 +16,8 @@
 					<h3 class="md:hidden text-center"><a :href="download.href">{{ download.title }}</a></h3>
 					<div class="w-full md:w-1/4 p-2">
 						<a :href="download.href">
-							<img
-								:src="download.image"
+							<cdn-image
+								:source="download.image"
 								:alt="download.title"
 								class="p-1 border border-black"
 							/>

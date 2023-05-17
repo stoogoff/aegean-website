@@ -12,8 +12,8 @@
 					class="card"
 				>
 					<div class="w-full md:w-1/3 p-2">
-						<img
-							:src="book.image"
+						<cdn-image
+							:source="book.image"
 							:alt="book.alt"
 							class="p-1 border border-black mb-2"
 						/>
@@ -40,7 +40,7 @@
 						:key="`product_${idx}`"
 						class="flex flex-col mb-8 md:mb-0"
 					>
-						<img :src="product.image" :alt="product.alt" class="border border-gray-800 mb-4" />
+						<cdn-image :source="product.image" :alt="product.alt" class="border border-gray-800 mb-4" />
 						<h3 class="text-center text-base">{{ product.title }}</h3>
 						<render-markdown class="flex-grow" :content="product.description" />
 						<we-link-action

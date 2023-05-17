@@ -4,6 +4,10 @@ export default {
 	// Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
 	target: 'server',
 
+	env: {
+		cdn: process.env.CDN_URL,
+	},
+
 	// Global page headers: https://go.nuxtjs.dev/config-head
 	head: {
 		title: title(),
