@@ -10,7 +10,7 @@ body {
 
 header {
 	@apply bg-black mb-8 md:mb-16;
-	background-image: url(/img/marble.jpg);
+	background-image: url(~@/assets/marble.jpg);
 }
 h1 {
 	@apply tracking-wider uppercase text-center font-bold mx-5 text-4xl sm:text-5xl lg:text-4xl xl:text-5xl text-white py-24 md:py-32;
@@ -19,7 +19,7 @@ h2 {
 	@apply tracking-wider uppercase text-center font-semibold my-5 text-lg;
 }
 h2.meander {
-	background-image: url(/img/meander.svg);
+	background-image: url(~@/assets/meander.svg);
 	background-size:  60% 100%;
 	background-position: left 0;
 	@apply bg-repeat-x;
@@ -49,7 +49,7 @@ p {
 
 .card {
 	@apply block md:flex pb-8 mb-8;
-	background: url(/img/divider.svg) 50% bottom no-repeat;
+	background: url(~@/assets/divider.svg) 50% bottom no-repeat;
 	background-size: 25%;
 }
 .card:last-of-type {

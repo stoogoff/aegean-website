@@ -1,5 +1,5 @@
-**/*.jpg
-**/*.png
-**/*.svg
-**/*.pdf
-**/*.zip
+static/**/*.jpg
+static/**/*.png
+static/**/*.svg
+static/**/*.pdf
+static/**/*.zip
