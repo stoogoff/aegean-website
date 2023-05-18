@@ -13,9 +13,9 @@
 					:key="`download_${idx}`"
 					class="card"
 				>
-					<h3 class="md:hidden text-center"><a :href="download.href">{{ download.title }}</a></h3>
+					<h3 class="md:hidden text-center"><a :href="cdn(download.href)">{{ download.title }}</a></h3>
 					<div class="w-full md:w-1/4 p-2">
-						<a :href="download.href">
+						<a :href="cdn(download.href)">
 							<cdn-image
 								:source="download.image"
 								:alt="download.title"
@@ -24,8 +24,8 @@
 						</a>
 					</div>
 					<div class="w-full md:w-3/4 p-2">
-						<h3 class="hidden md:block"><a :href="download.href">{{ download.title }}</a></h3>
-						<p><a :href="download.href">{{ download.description }}</a></p>
+						<h3 class="hidden md:block"><a :href="cdn(download.href)">{{ download.title }}</a></h3>
+						<p><a :href="cdn(download.href)">{{ download.description }}</a></p>
 						<dl class="text-sm flex flex-wrap">
 							<dd class="uppercase font-bold w-1/4 md:w-1/6">Size:</dd><dt class="w-3/4 md:w-5/6">{{ download.size }}</dt>
 							<dd class="uppercase font-bold w-1/4 md:w-1/6">Format:</dd><dt class="w-3/4 md:w-5/6">{{ download.format }}</dt>
@@ -46,6 +46,16 @@ export default {
 	computed: {
 		downloads() {
 			return downloads
+		},
+	},
+
+	methods: {
+		cdn(path) {
+			const cdn = new URL(process.env.cdn)
+
+			cdn.pathname = path
+
+			return cdn.toString()
 		},
 	},
 
