@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"flex-",
+				"flex-wrap"
+			],
+			[
+				"backgr",
+				"background-size"
+			],
+			[
+				"trans",
+				"translateZ()"
+			],
+			[
 				"acco",
 				"accordion-item"
 			],
@@ -148,10 +160,10 @@
 	"buffers":
 	[
 		{
-			"file": "package.json",
+			"contents": "docker build -t aegean --build-arg db_user=admin --build-arg db_password=XvE6fW3y2Mv .",
 			"settings":
 			{
-				"buffer_size": 520,
+				"buffer_size": 86,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
@@ -161,45 +173,141 @@
 					1,
 					"paste",
 					null,
-					"AQAAAAAAAAAAAAAACAIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAAAAAAAAAAAAjAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
-					2,
-					1,
-					"revert",
+					3,
+					4,
+					"unindent",
 					null,
-					"AgAAAAAAAAAAAAAAAAAAAAAAAAAIAgAAewogICJuYW1lIjogImNvbXBvbmVudC10ZXN0IiwKICAidmVyc2lvbiI6ICIxLjAuMCIsCiAgInByaXZhdGUiOiB0cnVlLAogICJzY3JpcHRzIjogewogICAgImRldiI6ICJudXh0IiwKICAgICJidWlsZCI6ICJudXh0IGJ1aWxkIiwKICAgICJzdGFydCI6ICJudXh0IHN0YXJ0IiwKICAgICJnZW5lcmF0ZSI6ICJudXh0IGdlbmVyYXRlIgogIH0sCiAgImRlcGVuZGVuY2llcyI6IHsKICAgICJjb3JlLWpzIjogIl4zLjI1LjMiLAogICAgIm51eHQiOiAiXjIuMTUuOCIsCiAgICAidnVlIjogIl4yLjcuMTAiLAogICAgInZ1ZS1zZXJ2ZXItcmVuZGVyZXIiOiAiXjIuNy4xMCIsCiAgICAidnVlLXRlbXBsYXRlLWNvbXBpbGVyIjogIl4yLjcuMTAiLAogICAgIndlLXVpIjogImh0dHBzOi8vZ2l0aHViLmNvbS9zdG9vZ29mZi9udXh0LWNvbXBvbmVudHMiCiAgfSwKICAiZGV2RGVwZW5kZW5jaWVzIjogewogICAgIkBudXh0anMvdGFpbHdpbmRjc3MiOiAiXjUuMy4zIiwKICAgICJwb3N0Y3NzIjogIl44LjQuMTciCiAgfQp9CgAAAAAAAAAACAIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAACAIAAAAAAAAIAgAAAAAAAAAAAAAAAPC/"
+					"CAAAABkAAAAAAAAAGQAAAAAAAAACAAAAICBOAAAAAAAAAE4AAAAAAAAAAgAAACAgGQAAAAAAAAAZAAAAAAAAAAIAAAAgIEwAAAAAAAAATAAAAAAAAAACAAAAICAZAAAAAAAAABkAAAAAAAAAAgAAACAgSgAAAAAAAABKAAAAAAAAAAIAAAAgIBkAAAAAAAAAGQAAAAAAAAACAAAAICBIAAAAAAAAAEgAAAAAAAAAAgAAACAg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACMAAAAAAAAAE8AAAAAAAAAAAAAAABAhEA"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "admin"
+					},
+					"BgAAAC8AAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAwAAAAAAAAABYAAAAke3sgc2VjcmV0cy5EQl9VU0VSIH19MAAAAAAAAAAxAAAAAAAAAAAAAAAxAAAAAAAAADIAAAAAAAAAAAAAADIAAAAAAAAAMwAAAAAAAAAAAAAAMwAAAAAAAAA0AAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABFAAAAAAAAAC8AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					13,
+					1,
+					"paste",
+					null,
+					"AgAAAFEAAAAAAAAAXAAAAAAAAAAAAAAAXAAAAAAAAABcAAAAAAAAABoAAAAke3sgc2VjcmV0cy5EQl9QQVNTV09SRCB9fQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABRAAAAAAAAAGsAAAAAAAAA////////738"
+				],
+				[
+					20,
+					1,
+					"left_delete",
+					null,
+					"AQAAABcAAAAAAAAAFwAAAAAAAAABAAAAXA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAeUA"
+				],
+				[
+					21,
+					3,
+					"right_delete",
+					null,
+					"AwAAABcAAAAAAAAAFwAAAAAAAAABAAAAChcAAAAAAAAAFwAAAAAAAAABAAAAIBcAAAAAAAAAFwAAAAAAAAABAAAAIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAXAAAAAAAAABcAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					23,
+					2,
+					"left_delete",
+					null,
+					"AgAAADEAAAAAAAAAMQAAAAAAAAABAAAAXDAAAAAAAAAAMAAAAAAAAAABAAAAIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAyAAAAAAAAADIAAAAAAAAA////////738"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAADAAAAAAAAAAMQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					25,
+					4,
+					"right_delete",
+					null,
+					"BAAAADEAAAAAAAAAMQAAAAAAAAABAAAACjEAAAAAAAAAMQAAAAAAAAABAAAAIDEAAAAAAAAAMQAAAAAAAAABAAAAIDEAAAAAAAAAMQAAAAAAAAABAAAALQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAxAAAAAAAAADEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAADEAAAAAAAAAMgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAxAAAAAAAAADEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": " ."
+					},
+					"AgAAAFQAAAAAAAAAVQAAAAAAAAAAAAAAVQAAAAAAAABWAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABUAAAAAAAAAFQAAAAAAAAA////////738"
 				]
 			]
 		},
 		{
-			"file": "tailwind.config.js",
+			"contents": "Searching 38 files for \"cdn-image\"\n\n/Users/stoo/Dev/aegean-website/components/FooterSection.vue:\n   21  \t\t\t\t\t\t\t\t\ttarget=\"_blank\"\n   22  \t\t\t\t\t\t\t\t>\n   23: \t\t\t\t\t\t\t\t\t<cdn-image :source=\"item.image\" :alt=\"item.alt\" class=\"block w-full max-w-xs mt-2\" />\n   24  \t\t\t\t\t\t\t\t</a>\n   25  \t\t\t\t\t\t\t</div>\n   ..\n   33  \t\t\t<div class=\"text-sm mt-8\">\n   34  \t\t\t\t<a href=\"https://we-evolve.co.uk/\" class=\"block\">\n   35: \t\t\t\t\t<cdn-image source=\"/img/we-evolve-transparent.png\" alt=\"we evolve\" class=\"mb-2 max-w-xs mx-auto\" />\n   36  \t\t\t\t</a>\n   37  \t\t\t\t<p class=\"text-center\">Copyright &copy; 2018&ndash;{{ (new Date()).getFullYear() }} we-evolve</p>\n\n/Users/stoo/Dev/aegean-website/pages/downloads.vue:\n   17  \t\t\t\t\t<div class=\"w-full md:w-1/4 p-2\">\n   18  \t\t\t\t\t\t<a :href=\"cdn(download.href)\">\n   19: \t\t\t\t\t\t\t<cdn-image\n   20  \t\t\t\t\t\t\t\t:source=\"download.image\"\n   21  \t\t\t\t\t\t\t\t:alt=\"download.title\"\n\n/Users/stoo/Dev/aegean-website/pages/index.vue:\n    2  \t<div>\n    3  \t\t<section id=\"logo\" class=\"parallax flex justify-center items-center\">\n    4: \t\t\t<cdn-image source=\"/img/home/aegean-logo.png\" alt=\"Aegean\" class=\"block mx-auto\" />\n    5  \t\t</section>\n    6  \t\t<section id=\"blurb\" class=\"buffer inverse\">\n    7: \t\t\t<cdn-image source=\"/img/home/screen-owl.jpg\" alt=\"Stylised owl\" class=\"bordered mb-4 md:mb-0\" />\n    8  \t\t\t<div class=\"flex flex-row justify-center items-center\">\n    9  \t\t\t\t<p class=\"text-xl md:text-3xl\"><strong class=\"aegean\">Aegean</strong> is a tabletop role-playing game about a group of mythic heroes building a new, free city on the shores of the Aegean Sea. There are neighbouring cities to trade or war with, monsters to kill, gods to appease, deceptions, negotiations and bloody skirmishes.</p>\n   ..\n   12  \t\t<section id=\"figure\" class=\"parallax\" :style=\"`background-image: url(${backgroundImage('/img/home/dice-tray.jpg')})`\"></section>\n   13  \t\t<section id=\"system\" class=\"buffer\">\n   14: \t\t\t<cdn-image source=\"/img/home/warriors.png\" alt=\"Two warriors facing the enemy\" />\n   15  \t\t\t<div>\n   16  \t\t\t\t<h2>The System</h2>\n   ..\n   37  \t\t\t\t<we-link-action to=\"/setting\" block>Setting</we-link-action>\n   38  \t\t\t</div>\n   39: \t\t\t<cdn-image class=\"my-4\" source=\"/img/home/kerberos.png\" alt=\"Kerberos resting on a rock\" />\n   40  \t\t</section>\n   41  \t\t<section id=\"books\" class=\"buffer inverse\" v-if=\"selectedProduct\">\n   ..\n   53  \t\t\t\t\t\t@click=\"selectedBook = idx\"\n   54  \t\t\t\t\t>\n   55: \t\t\t\t\t\t<cdn-image\n   56  \t\t\t\t\t\t\tclass=\"absolute inset-0\"\t\t\n   57  \t\t\t\t\t\t\t:source=\"book.image\"\n   ..\n   60  \t\t\t\t\t</div>\n   61  \t\t\t\t</div>\n   62: \t\t\t\t<cdn-image :source=\"selectedProduct.image\" :alt=\"selectedProduct.alt\" class=\"bordered hidden md:block\" />\n   63  \t\t\t</div>\n   64  \t\t\t<div>\n\n/Users/stoo/Dev/aegean-website/pages/products/index.vue:\n   13  \t\t\t\t>\n   14  \t\t\t\t\t<div class=\"w-full md:w-1/3 p-2\">\n   15: \t\t\t\t\t\t<cdn-image\n   16  \t\t\t\t\t\t\t:source=\"book.image\"\n   17  \t\t\t\t\t\t\t:alt=\"book.alt\"\n   ..\n   41  \t\t\t\t\t\tclass=\"flex flex-col mb-8 md:mb-0\"\n   42  \t\t\t\t\t>\n   43: \t\t\t\t\t\t<cdn-image :source=\"product.image\" :alt=\"product.alt\" class=\"border border-gray-800 mb-4\" />\n   44  \t\t\t\t\t\t<h3 class=\"text-center text-base\">{{ product.title }}</h3>\n   45  \t\t\t\t\t\t<render-markdown class=\"flex-grow\" :content=\"product.description\" />\n\n11 matches across 4 files\n",
 			"settings":
 			{
-				"buffer_size": 75,
+				"buffer_size": 3236,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "components/FooterSection.vue",
+			"settings":
+			{
+				"buffer_size": 1899,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
-				[
-					1,
-					1,
-					"paste",
-					null,
-					"AQAAAAAAAAAAAAAASwAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					5,
-					1,
-					"revert",
-					null,
-					"AgAAAAAAAAAAAAAAAAAAAAAAAABLAAAAbW9kdWxlLmV4cG9ydHMgPSB7Cgljb250ZW50OiBbJy4vbm9kZV9tb2R1bGVzL3dlLXVpL2NvbXBvbmVudHMvKiovKi52dWUnXQp9AAAAAAAAAABLAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAASwAAAAAAAABLAAAAAAAAAAAAAAAAAPC/"
-				]
 			]
+		},
+		{
+			"file": "utils/config.js",
+			"settings":
+			{
+				"buffer_size": 1678,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": ".github/workflows/docker-image.yml",
+			"settings":
+			{
+				"buffer_size": 1877,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -243,10 +351,68 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/stoo/Dev/aegean-website"
+		"/Users/stoo/Dev/aegean-website",
+		"/Users/stoo/Dev/aegean-website/.github",
+		"/Users/stoo/Dev/aegean-website/.github/workflows",
+		"/Users/stoo/Dev/aegean-website/assets",
+		"/Users/stoo/Dev/aegean-website/components",
+		"/Users/stoo/Dev/aegean-website/layouts",
+		"/Users/stoo/Dev/aegean-website/pages",
+		"/Users/stoo/Dev/aegean-website/pages/products",
+		"/Users/stoo/Dev/aegean-website/plugins",
+		"/Users/stoo/Dev/aegean-website/server",
+		"/Users/stoo/Dev/aegean-website/server/api",
+		"/Users/stoo/Dev/aegean-website/state",
+		"/Users/stoo/Dev/aegean-website/static",
+		"/Users/stoo/Dev/aegean-website/static/dl",
+		"/Users/stoo/Dev/aegean-website/static/img",
+		"/Users/stoo/Dev/aegean-website/utils"
 	],
 	"file_history":
 	[
+		"/Users/stoo/Dev/aegean-website/plugins/state.js",
+		"/Users/stoo/Dev/aegean-website/state/products.js",
+		"/Users/stoo/Dev/aegean-website/package.json",
+		"/Users/stoo/Dev/aegean-website/pages/downloads.vue",
+		"/Users/stoo/Dev/aegean-website/nuxt.config.js",
+		"/Users/stoo/Dev/aegean-website/.dockerignore",
+		"/Users/stoo/Dev/aegean-website/pages/index.vue",
+		"/Users/stoo/Dev/aegean-website/components/FooterSection.vue",
+		"/Users/stoo/Dev/aegean-website/assets/styles.css",
+		"/Users/stoo/Dev/aegean-website/components/CdnImage.vue",
+		"/Users/stoo/Dev/aegean-website/exmaple.env",
+		"/Users/stoo/Dev/aegean-website/.env",
+		"/Users/stoo/Dev/aegean-website/Dockerfile",
+		"/Users/stoo/Dev/aegean-website/pages/products/index.vue",
+		"/Users/stoo/Dev/aegean-website/server/api/index.js",
+		"/Users/stoo/Dev/aegean-website/node_modules/we-ui/components/buttons/LinkAction.vue",
+		"/Users/stoo/Dev/aegean-website/components/HeaderSection.vue",
+		"/Users/stoo/Dev/aegean-website/yarn.lock",
+		"/Users/stoo/Dev/aegean-website/node_modules/we-ui/components/nav/MainNav.vue",
+		"/Users/stoo/Dev/aegean-website/node_modules/we-ui/components/nav/Navbar.vue",
+		"/Users/stoo/Dev/aegean-website/node_modules/we-ui/components/nav/NavButton.vue",
+		"/Users/stoo/Dev/aegean-website/node_modules/we-ui/nuxt.js",
+		"/Users/stoo/Dev/aegean-website/.github/workflows/docker-image.yml",
+		"/Users/stoo/Dev/aegean-website/pages/system.vue",
+		"/Users/stoo/Dev/aegean-website/pages/setting.vue",
+		"/Users/stoo/Dev/aegean-website/pages/example.vue",
+		"/Users/stoo/Dev/aegean-website/layouts/home.vue",
+		"/Users/stoo/Dev/aegean-website/layouts/default.vue",
+		"/Users/stoo/Dev/aegean-website/.gitignore",
+		"/Users/stoo/Dev/aegean-website/node_modules/we-ui/components/buttons/ButtonAction.vue",
+		"/Users/stoo/Dev/aegean-website/utils/config.js",
+		"/Users/stoo/Dev/aegean-website/node_modules/we-ui/components/nav/NavItem.vue",
+		"/Users/stoo/Dev/aegean-website/node_modules/we-ui/components/IconView.vue",
+		"/Users/stoo/Dev/aegean-website/state/index.js",
+		"/Users/stoo/Dev/aegean-website/components/FooterLinks.vue",
+		"/Users/stoo/Dev/aegean-website/server/api/api.js",
+		"/Users/stoo/Dev/aegean-website/components/RenderMarkdown.vue",
+		"/Users/stoo/Dev/aegean-website/utils/markdown.js",
+		"/Users/stoo/Dev/aegean-website/server/db.js",
+		"/Users/stoo/Dev/aegean-website/server/errors.js",
+		"/Users/stoo/Dev/aegean-website/README.md",
+		"/Users/stoo/Dev/aegean-website/tailwind.config.js",
+		"/Users/stoo/Dev/aegean-website/utils/meta.js",
 		"/Users/stoo/Dev/component-test/nuxt.config.js",
 		"/Users/stoo/Dev/component-test/pages/form.vue",
 		"/Users/stoo/Dev/nuxt-components/package.json",
@@ -331,60 +497,18 @@
 		"/Users/stoo/Dev/aegean-app/static/data/gifts.json",
 		"/Users/stoo/Dev/aegean-app/state/chargen.js",
 		"/Users/stoo/Dev/aegean-app/components/system/AdversaryLink.vue",
-		"/Users/stoo/Dev/aegean-app/pages/adversaries/index.vue",
-		"/Users/stoo/Dev/aegean-app/state/adversaries.js",
-		"/Users/stoo/Dev/aegean-app/components/system/StatBlock.vue",
-		"/Users/stoo/Dev/aegean-app/components/buttons/InfoButton.vue",
-		"/Users/stoo/Dev/aegean-app/components/DefinitionTerm.vue",
-		"/Users/stoo/Dev/aegean-app/components/buttons/ButtonAction.vue",
-		"/Users/stoo/Dev/aegean-app/components/tabs/TabPanel.vue",
-		"/Users/stoo/Dev/aegean-app/components/forms/TextInput.vue",
-		"/Users/stoo/Dev/aegean-app/components/TabGroup.vue",
-		"/Users/stoo/Dev/aegean-app/components/forms/ListFilter.vue",
-		"/Users/stoo/Dev/aegean-app/components/MarkdownContent.vue",
-		"/Users/stoo/Dev/aegean-app/content/characters/creation.md",
-		"/Users/stoo/Dev/aegean-app/content/characters/heritage.md",
-		"/Users/stoo/Dev/aegean-app/content/characters/concept.md",
-		"/Users/stoo/Dev/aegean-app/components/AlertView.vue",
-		"/Users/stoo/Dev/aegean-app/layouts/full-width.vue",
-		"/Users/stoo/Dev/aegean-app/layouts/default.vue",
-		"/Users/stoo/Dev/aegean-app/components/MessageView.vue",
-		"/Users/stoo/Dev/aegean-app/layouts/column.vue",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/RPG Scenarios/Vampire/notes.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/tor/niluphel.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/build/include.json",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/build/index.js",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/tpl/adventure.html",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/css/adventure.sass",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/Score - Trouble at the Nexus.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/Score - The Juggernaut.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/the-juggernaut-2.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/css/_text.sass",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/03-core-system.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/11-lexicon.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/09-universe.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/08-crew-creation.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/personas/chimera.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/06-downtime.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/05-advancement.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/04-score.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/02-basics.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/wild/ORIGINAL.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/wild/public-trial.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/gaslightclub/css/_variables.sass",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/personas/bruiser.md",
-		"/Users/stoo/Library/Mobile Documents/com~apple~CloudDocs/Documents/Parchment/src/action-potential/tpl/main.html",
-		"/Users/stoo/Documents/Parchment/src/alien/adventure.md"
+		"/Users/stoo/Dev/aegean-app/pages/adversaries/index.vue"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 130.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -392,6 +516,75 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cdn-image",
+			":href=\"download.href\"",
+			"url",
+			".svg",
+			"url(/img",
+			"/img/home",
+			"com",
+			"<cdn-img",
+			"<cdn-",
+			"<img",
+			"<im",
+			"<img",
+			"<",
+			"NavButton",
+			"NavBar",
+			"secrets.",
+			"md",
+			".inverse ul.list li:after, .inverse .prose ul li:after {\n\t@apply bg-gray-50;\n}",
+			"books",
+			"nuxt-link",
+			"\">",
+			"pdf",
+			"3/4",
+			"1/4",
+			"width-",
+			"toggleNavbar",
+			"background",
+			"transparent",
+			"</dt>dt>",
+			"6 point",
+			"Product",
+			"<h2>",
+			"alt",
+			"id",
+			"link",
+			"<p",
+			"header",
+			"section",
+			"<dt>",
+			"<aside>",
+			"</aside>",
+			"</strong> ",
+			"<p><strong>",
+			":</strong>",
+			"selectedProduct",
+			"h2",
+			"getItemsForTag",
+			"return error",
+			"logger",
+			"<img",
+			"<div class=\"parallax-layer\"></div>",
+			"-item",
+			"#lo",
+			"<h3>",
+			" />",
+			"submit",
+			"class=\"block mx-auto md:mx-0\" ",
+			"class=\"w-56 m-4\" ",
+			"--",
+			"---",
+			"h3",
+			"*",
+			"*Aegean*",
+			"**",
+			"**Risk**",
+			"--",
+			"---",
+			"*Aegean*",
+			"</a>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -415,51 +608,174 @@
 			[
 				{
 					"buffer": 0,
-					"file": "package.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 520,
+						"buffer_size": 86,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								520,
-								520
+								86,
+								86
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JSON/JSON.sublime-syntax",
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "tailwind.config.js",
-					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 75,
+						"buffer_size": 3236,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										163,
+										172
+									],
+									[
+										406,
+										415
+									],
+									[
+										788,
+										797
+									],
+									[
+										1028,
+										1037
+									],
+									[
+										1195,
+										1204
+									],
+									[
+										1900,
+										1909
+									],
+									[
+										2134,
+										2143
+									],
+									[
+										2396,
+										2405
+									],
+									[
+										2537,
+										2546
+									],
+									[
+										2806,
+										2815
+									],
+									[
+										2963,
+										2972
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								168,
+								168
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "components/FooterSection.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1899,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								75,
-								75
+								1398,
+								1398
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": false,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 2,
+								"tabSize": 2
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 1062.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "utils/config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								483,
+								483
 							]
 						],
 						"settings":
@@ -476,7 +792,39 @@
 							"use_tab_stops": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 796.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": ".github/workflows/docker-image.yml",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 796.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -488,7 +836,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 37.0
+		"height": 38.0
 	},
 	"input":
 	{
@@ -533,7 +881,7 @@
 	"project": "Aegean Website.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 72.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -543,6 +891,122 @@
 		"selected_items":
 		[
 			[
+				"config",
+				"utils/config.js"
+			],
+			[
+				"nuxt.",
+				"nuxt.config.js"
+			],
+			[
+				"api/in",
+				"server/api/index.js"
+			],
+			[
+				"linkac",
+				"node_modules/we-ui/components/buttons/LinkAction.vue"
+			],
+			[
+				"mainna",
+				"node_modules/we-ui/components/nav/MainNav.vue"
+			],
+			[
+				"navbar",
+				"node_modules/we-ui/components/nav/Navbar.vue"
+			],
+			[
+				"mainn",
+				"node_modules/we-ui/components/nav/MainNav.vue"
+			],
+			[
+				"navv",
+				"node_modules/we-ui/components/nav/Navbar.vue"
+			],
+			[
+				"navbutton",
+				"node_modules/we-ui/components/nav/NavButton.vue"
+			],
+			[
+				"foot",
+				"components/FooterSection.vue"
+			],
+			[
+				"yarn",
+				"yarn.lock"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"we-ui/nu",
+				"node_modules/we-ui/nuxt.js"
+			],
+			[
+				"n",
+				"nuxt.config.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"footer",
+				"components/FooterSection.vue"
+			],
+			[
+				"style",
+				"assets/styles.css"
+			],
+			[
+				"",
+				"node_modules/we-ui/components/buttons/LinkAction.vue"
+			],
+			[
+				"linkaction",
+				"node_modules/we-ui/components/buttons/LinkAction.vue"
+			],
+			[
+				"button",
+				"node_modules/we-ui/components/buttons/ButtonAction.vue"
+			],
+			[
+				"navbutt",
+				"node_modules/we-ui/components/nav/NavButton.vue"
+			],
+			[
+				"navitem",
+				"node_modules/we-ui/components/nav/NavItem.vue"
+			],
+			[
+				"nav",
+				"node_modules/we-ui/components/nav/Navbar.vue"
+			],
+			[
+				"mainnav",
+				"node_modules/we-ui/components/nav/MainNav.vue"
+			],
+			[
+				"yarn.lo",
+				"yarn.lock"
+			],
+			[
+				"iconvi",
+				"node_modules/we-ui/components/IconView.vue"
+			],
+			[
+				"nuxt",
+				"nuxt.config.js"
+			],
+			[
+				"head",
+				"components/HeaderSection.vue"
+			],
+			[
+				"linkact",
+				"node_modules/we-ui/components/buttons/LinkAction.vue"
+			],
+			[
 				"buttonac",
 				"nuxt-components/components/buttons/ButtonAction.vue"
 			],
@@ -551,20 +1015,8 @@
 				"nuxt-components/components/buttons/ButtonAction.vue"
 			],
 			[
-				"nuxt",
-				"nuxt.config.js"
-			],
-			[
-				"pack",
-				"package.json"
-			],
-			[
 				"icon",
 				"components/IconView.vue"
-			],
-			[
-				"nuxt.",
-				"nuxt.config.js"
 			],
 			[
 				"acco",
@@ -631,10 +1083,6 @@
 				"components/forms/CheckBox.vue"
 			],
 			[
-				"iconvi",
-				"components/IconView.vue"
-			],
-			[
 				"RADIO",
 				"components/forms/RadioGroup.vue"
 			],
@@ -667,10 +1115,6 @@
 				"state/character.js"
 			],
 			[
-				"mainn",
-				"components/nav/MainNav.vue"
-			],
-			[
 				"state/ima",
 				"state/image.js"
 			],
@@ -689,10 +1133,6 @@
 			[
 				"herit",
 				"static/data/chargen/heritage.json"
-			],
-			[
-				"linkac",
-				"components/buttons/LinkAction.vue"
 			],
 			[
 				"string",
@@ -789,10 +1229,6 @@
 			[
 				"charge",
 				"state/chargen.js"
-			],
-			[
-				"config",
-				"utils/config.js"
 			],
 			[
 				"assets/st",
@@ -965,94 +1401,6 @@
 			[
 				"html/",
 				"html/careers.html"
-			],
-			[
-				"diplom",
-				"src/rules/talents/diplomat.md"
-			],
-			[
-				"honour",
-				"src/rules/talents/honoured.md"
-			],
-			[
-				"commander",
-				"src/rules/talents/commander.md"
-			],
-			[
-				"motivate",
-				"src/rules/talents/motivate.md"
-			],
-			[
-				"dead",
-				"src/rules/talents/deadeye-improved.md"
-			],
-			[
-				"fluster",
-				"src/rules/talents/fluster.md"
-			],
-			[
-				"slinger",
-				"src/setting/careers/slinger.md"
-			],
-			[
-				"careers",
-				"html/careers.html"
-			],
-			[
-				"caree",
-				"dist/careers.html"
-			],
-			[
-				"lamp",
-				"src/rules/talents/lampoon.md"
-			],
-			[
-				"perfo",
-				"src/setting/careers/performer.md"
-			],
-			[
-				"physi",
-				"src/rules/talents/physician.md"
-			],
-			[
-				"merhc",
-				"src/setting/careers/merchant.md"
-			],
-			[
-				"performer",
-				"src/setting/careers/performer.md"
-			],
-			[
-				"diplomat",
-				"src/rules/talents/diplomat.md"
-			],
-			[
-				"citizen",
-				"src/setting/careers/citizen.md"
-			],
-			[
-				"athlete",
-				"src/setting/careers/athlete.md"
-			],
-			[
-				"silver",
-				"src/setting/careers/silver-tongue.md"
-			],
-			[
-				"ath",
-				"src/setting/careers/athlete.md"
-			],
-			[
-				"cam",
-				"src/rules/talents/camouflage.md"
-			],
-			[
-				"hunt",
-				"src/setting/careers/hunter.md"
-			],
-			[
-				"hunter",
-				"src/rules/talents/hunters-quarry.md"
 			]
 		],
 		"width": 0.0

@@ -3,7 +3,7 @@ const OG_TYPE = 'website'
 const BASE_URL = 'https://www.aegeanrpg.com'
 const BASE_TITLE = 'Aegean'
 const BASE_DESCRIPTION = 'AEGEAN is a tabletop role-playing game about a group of mythic heroes building a new, free city on the shores of the Aegean Sea. There are neighbouring cities to trade or war with, monsters to kill, gods to appease, deceptions, negotiations and bloody skirmishes.'
-const BASE_IMAGE = `${BASE_URL}/img/kickstarter-banner.png`
+const BASE_IMAGE = `https://cdn.aegeanrpg.com/img/aegean.jpg`
 
 export const title = meta => meta && meta.title ? `${meta.title} | ${BASE_TITLE}` : BASE_TITLE
 
