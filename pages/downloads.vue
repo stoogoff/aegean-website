@@ -38,15 +38,21 @@
 </template>
 <script>
 import { title, meta, url } from '~/utils/meta'
-import { downloads } from '~/utils/config'
+//import { downloads } from '~/utils/config'
 
 export default {
 	name: 'ResourcesPage',
 
-	computed: {
-		downloads() {
-			return downloads
-		},
+	async fetch() {
+		await this.$products.fetch()
+
+		this.downloads = this.$products.downloads()
+	},
+
+	data() {
+		return {
+			downloads: [],
+		}
 	},
 
 	methods: {
