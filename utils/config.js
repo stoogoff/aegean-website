@@ -28,9 +28,17 @@ export const downloads = [
 		title: 'Aegean Map',
 		description: 'A large scale, colour map of the Aegean Sea and surrounding lands.',
 		image: '/img/icon-map.jpg',
-		size: '10.5MB',
+		size: '3MB',
 		format: 'JPEG',
 		href: 'dl/aegean-map.jpg',
+	},
+	{
+		title: 'Aegean Map (Blank)',
+		description: 'A large scale, colour map of the Aegean Sea and surrounding lands with no labels or location markers.',
+		image: '/img/icon-map.jpg',
+		size: '2.7MB',
+		format: 'JPEG',
+		href: 'dl/aegean-map-blank.jpg',
 	},
 	{
 		title: 'Character Booklet',
