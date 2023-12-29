@@ -47,7 +47,6 @@ export default Vue.component('FooterSection', {
 	computed: {
 		elsewhere() {
 			return [
-				{ icon: 'twitter', href: 'https://twitter.com/stoogoff', colour: 'text-blue-400' },
 				{ icon: 'facebook', href: 'https://www.facebook.com/groups/810251730568613', colour: 'text-blue-600' },
 				{ icon: 'itch', href: 'https://we-evolve.itch.io/', colour: 'text-red-400' },
 				...sales,
