@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { sortByProperty } from 'we-ui/utils/list'
 
 const state = Vue.observable({
 	books: [],
@@ -10,19 +11,19 @@ const state = Vue.observable({
 export default ({ $axios }) => {
 	return {
 		books() {
-			return state.books
+			return state.books.sort(sortByProperty('order'))
 		},
 
 		products() {
-			return state.products
+			return state.products.sort(sortByProperty('order'))
 		},
 
 		downloads() {
-			return state.downloads
+			return state.downloads.sort(sortByProperty('order'))
 		},
 
 		async fetch() {
-			if(state.fetched) {
+			if(state.fetched && !process.server) {
 				return
 			}
 
