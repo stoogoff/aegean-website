@@ -3,6 +3,18 @@
 		<section id="logo" class="parallax flex justify-center items-center">
 			<cdn-image source="/img/home/aegean-logo.png" alt="Aegean" class="block mx-auto" />
 		</section>
+		<section id="pelops" class="buffer">
+			<div>
+				<h2>The Isle of Pelops</h2>
+				<p class="text-xl md:text-3xl"><strong class="aegean">COMING SOON!</strong> A new setting guide for the <strong class="aegean">Aegean</strong> role-playing game. <em>The Isle of Pelops</em> will describe the mythology and history of the Peloponnese as well as provide details of important people and locations, including the citadel of Mykenai and Sparta. New options are provided for players and GMs alike, including new backgrounds, Mystery Cults, adversaries, and more!</p>
+				<p class="text-lg md:text-xl">Scheduled for release in <time datetime="2024">Q4 2024</time></p>
+			</div>
+			<cdn-image
+				source="/img/products/isle-of-pelops-cover.jpg"
+				alt="The Isle of Pelops Cover"
+				class="bordered mx-8 mb-4 md:mb-0"
+			/>
+		</section>
 		<section id="blurb" class="buffer inverse">
 			<cdn-image source="/img/home/screen-owl.jpg" alt="Stylised owl" class="bordered mb-4 md:mb-0" />
 			<div class="flex flex-row justify-center items-center">
@@ -148,5 +160,8 @@ export default {
 #logo img {
 	width: 90vw;
 }
-
+#pelops {
+	background-color: rgb(89,92,67);
+	color: rgb(252,251,232);
+}
 </style>
