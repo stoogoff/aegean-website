@@ -12,7 +12,7 @@
 			<cdn-image
 				source="/img/products/isle-of-pelops-cover.jpg"
 				alt="The Isle of Pelops Cover"
-				class="bordered mx-8 mb-4 md:mb-0"
+				class="bordered md:mx-8 mb-4 md:mb-0"
 			/>
 		</section>
 		<section id="blurb" class="buffer inverse">
