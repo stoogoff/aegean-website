@@ -15,10 +15,4 @@ export const sales = [
 		alt: 'DriveThruRPG',
 		title: 'Buy PDF on DriveThruRPG',
 	},
-	{
-		image: '/img/gamefound.svg',
-		href: 'https://gamefound.com/projects/stoo/aegean-rpg-mythic-roleplaying-across-the-aegean-sea',
-		alt: 'GameFound',
-		title: 'Buy print on GameFound',
-	},
 ]

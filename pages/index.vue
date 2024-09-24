@@ -78,7 +78,7 @@
 				<render-markdown :content="selectedProduct.description" />
 			</div>
 		</section>
-		<section id="purchase" class="buffer">
+		<section id="purchase">
 			<a
 				v-for="(sale, idx) in sales"
 				:key="`sale_${idx}`"
@@ -163,5 +163,8 @@ export default {
 #pelops {
 	background-color: rgb(89,92,67);
 	color: rgb(252,251,232);
+}
+#purchase {
+	@apply text-center p-2 md:p-12;
 }
 </style>
