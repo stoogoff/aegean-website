@@ -6,8 +6,8 @@
 		<section id="pelops" class="buffer">
 			<div>
 				<h2>The Isle of Pelops</h2>
-				<p class="text-xl md:text-3xl"><strong class="aegean">COMING SOON!</strong> A new setting guide for the <strong class="aegean">Aegean</strong> role-playing game. <em>The Isle of Pelops</em> will describe the mythology and history of the Peloponnese as well as provide details of important people and locations, including the citadel of Mykenai and Sparta. New options are provided for players and GMs alike, including new backgrounds, Mystery Cults, adversaries, and more!</p>
-				<p class="text-lg md:text-xl">Scheduled to arrive on <strong>Kickstarter</strong> in <time datetime="2024">Q4 2024</time></p>
+				<p class="text-xl md:text-3xl"><strong class="aegean">NOW RUNNING!</strong> A new setting guide for the <strong class="aegean">Aegean</strong> role-playing game. <em>The Isle of Pelops</em> will describe the mythology and history of the Peloponnese as well as provide details of important people and locations, including the citadel of Mykenai and Sparta. New options are provided for players and GMs alike, including new backgrounds, Mystery Cults, adversaries, and more!</p>
+				<we-link-action to="https://www.kickstarter.com/projects/stoo-goff/aegean-the-isle-of-pelops" block outlined>Back Now!</we-link-action>
 			</div>
 			<cdn-image
 				source="/img/products/isle-of-pelops-cover.jpg"

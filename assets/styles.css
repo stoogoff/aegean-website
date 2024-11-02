@@ -110,3 +110,6 @@ ul.list li:after, .prose ul li:after {
 .btn {
 	@apply bg-black text-gray-300 hover:text-white hover:bg-gray-700 border-gray-400;
 }
+.btn.outlined {
+	@apply bg-transparent text-gray-100 hover:text-white hover:bg-black border-gray-100;
+}
