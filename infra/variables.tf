@@ -1,4 +1,9 @@
 
+variable "bunny_api_key" {
+	type        = string
+	description = "bunny.net API key"
+}
+
 variable "mail_server" {
 	type        = string
 	description = "Mail server IP address"

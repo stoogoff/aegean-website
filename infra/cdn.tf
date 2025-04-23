@@ -3,7 +3,7 @@ resource "bunnynet_storage_zone" "cdn" {
 	name                 = "${var.service_name}-cdn"
 	zone_tier            = "Standard"
 	region               = "UK"
-	replication_regions = ["BR", "NY", "SG"] // does this need more coverage?
+	replication_regions  = ["BR", "NY", "LA", "SG", "SYD"]
 }
 
 resource "bunnynet_pullzone" "cdn" {
@@ -55,7 +55,7 @@ resource "bunnynet_pullzone_edgerule" "redirect_pullzone_domain" {
 			type       = "Url"
 			match_type = "MatchAny"
 			patterns   = [
-				"https://${bunnynet_pullzone_hostname.bunnynet.name}/*"
+				"https://${bunnynet_pullzone_hostname.bunnynet_cdn.name}/*"
 			]
 			parameter1 = null
 			parameter2 = null

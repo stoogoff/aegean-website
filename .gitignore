@@ -91,3 +91,6 @@ sw.*
 *.swp
 
 src/static
+*.tfvars
+*.hcl
+.terraform
