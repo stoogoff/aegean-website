@@ -5,8 +5,9 @@ resource "bunnynet_pullzone" "www" {
   add_canonical_header = true
 
   origin {
-    type = "OriginUrl"
-    url  = "http://${var.web_server}"
+    type                = "OriginUrl"
+    url                 = "http://${var.web_server}"
+    forward_host_header = true
   }
 
   routing {
