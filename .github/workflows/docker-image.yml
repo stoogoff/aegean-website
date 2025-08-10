@@ -16,6 +16,7 @@ jobs:
     - name: Build, tag, and push the image to the container repository
       id: build-image
       env:
+        CONTAINER_REPOSITORY: ${{ secrets.CONTAINER_REPOSITORY }}
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Login to container registry
