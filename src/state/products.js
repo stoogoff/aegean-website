@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { sortByProperty } from 'we-ui/utils/list'
+import { getAllDocsByType } from '~/utils/couch'
 
 const state = Vue.observable({
 	books: [],
@@ -27,9 +28,9 @@ export default ({ $axios }) => {
 				return
 			}
 
-			state.books = await $axios.$get('/api/books')
-			state.products = await $axios.$get('/api/products')
-			state.downloads = await $axios.$get('/api/downloads')
+			state.books = await getAllDocsByType($axios, 'book')
+			state.products = await getAllDocsByType($axios, 'product')
+			state.downloads = await getAllDocsByType($axios, 'download')
 			state.fetched = true
 		},
 	}
