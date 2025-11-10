@@ -6,7 +6,9 @@
 		<section id="pelops" class="buffer">
 			<div>
 				<h2>The Isle of Pelops</h2>
-				<p class="text-xl md:text-3xl"><strong class="aegean">COMING SOON!</strong> A new setting guide for the <strong class="aegean">Aegean</strong> role-playing game. <em>The Isle of Pelops</em> will describe the mythology and history of the Peloponnese as well as provide details of important people and locations, including the citadel of Mykenai and Sparta. New options are provided for players and GMs alike, including new backgrounds, Mystery Cults, adversaries, and more!</p>
+				<p class="text-xl md:text-3xl"><strong class="aegean">AVAILABLE NOW!</strong> A new setting guide for the <strong class="aegean">Aegean</strong> role-playing game. <em>The Isle of Pelops</em> will describe the mythology and history of the Peloponnese as well as provide details of important people and locations, including the citadel of Mykenai and Sparta. New options are provided for players and GMs alike, including new backgrounds, Mystery Cults, adversaries, and more!</p>
+				<p class="text-xl md:text-3xl">Available in digital formats and print on demand from <a href="https://www.drivethrurpg.com/en/product/538517/aegean-the-isle-of-pelops?src=aegean-website">DriveThruRPG</a>.</p>
+				<p class="text-xl md:text-3xl">Print copies available to pre-order from <a href="https://aegean-the-isle-of-pelops.backerkit.com/hosted_preorders">Backerkit</a>.</p>
 			</div>
 			<cdn-image
 				source="/img/products/isle-of-pelops-cover.jpg"
@@ -162,6 +164,15 @@ export default {
 #pelops {
 	background-color: rgb(89,92,67);
 	color: rgb(252,251,232);
+}
+#pelops a {
+	border-bottom: 2px solid rgb(178, 181, 153);
+	color: rgb(178, 181, 153);
+	transition: color .5s, border-color .5s;
+}
+#pelops a:hover {
+	color: rgb(252,251,232);
+	border-color: rgb(89,92,67);
 }
 #purchase {
 	@apply text-center p-2 md:p-12;
